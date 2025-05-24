@@ -7,6 +7,11 @@ class Frog{
 		System.out.println(age);  // By using this keyword, we are referring to the instance variables
 		//of current object
 	}
+	public void setName(String name) {
+		this.name="Rhino";
+		System.out.println("Local variabel Name is "+name);
+				System.out.println("Instance Name is "+this.name);
+	}
 }
 public class App {
 
@@ -17,6 +22,7 @@ public class App {
        System.out.println("Local Variable age is ");
        f1.setAge(10);
        System.out.println("Instance Variable age is "+ f1.age);
+       f1.setName("Reco");
 	}
 
 }
