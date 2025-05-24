@@ -3,7 +3,7 @@ public class App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-     String info=""; //New string object is created  in heap every time, we are assigning info and it is not 
+     String info=""; //New string object is created  in heap every time, we are concatenating info as it is not 
      //appending within the same string object
      info+="My name is";
      info+=" ";
