@@ -1,3 +1,4 @@
+package world;
 
 public class Plant {
 	//Bad Practice because we should hide the instance variable from outside world
@@ -7,9 +8,11 @@ public class Plant {
    
    private String type;
    protected String size;
+   int height;
    public Plant() {
 	   this.name="Freddy";
 	   this.type="plant";
 	   this.size="medium";
+	   this.height=8;
    }
 }
