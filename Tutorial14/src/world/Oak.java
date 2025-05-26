@@ -1,3 +1,4 @@
+package world;
 
 public class Oak extends Plant {
    public Oak()
@@ -5,5 +6,7 @@ public class Oak extends Plant {
 	  // type="tree";
 	   //This works because size is protected and Oak is subclass
 	   this.size="Large";
+	   //Default access specifier . This works because Oak and plant are in same package
+	   this.height=10;
    }	
 }
