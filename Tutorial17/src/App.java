@@ -24,7 +24,7 @@ public class App {
         
         //Upcasting
         Machine machine2=new Camera();
-        machine2.start();
+        machine2.start(); //Object Slicing
      //   machine2.snap(); Won't work because with the help of Machine type reference variables 
         //we can access only methods defined within the Machine(Parent) class
 		
