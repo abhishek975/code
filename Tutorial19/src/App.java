@@ -39,10 +39,11 @@ public class App {
      }
     
      public static void showList1(ArrayList<? super Camera> list) { 
-    	 for(Machine value:list)   //Won't work because super classes of camera need not to necessarily have Camera functions
+    	 for(Object value:list)   //Won't work because super classes of camera need not to necessarily have Camera functions
+    		 //so we convert it into Object class again
     	 {
     		 System.out.println(value);
-    		 value.start();
+    	//	 value.start();  Now we cannot use camera specific methods
     	 }
      }
 		
