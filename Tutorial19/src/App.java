@@ -14,16 +14,20 @@ public class App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-     ArrayList<String> list = new ArrayList<>();
+     ArrayList<Machine> list = new ArrayList<Machine>();
      
-     list.add("One");
-     list.add("Two");
-     showList(list);
+     list.add(new Machine());
+     list.add(new Machine());
+     
+     ArrayList<Camera> list1 = new ArrayList<Camera>();
+     list1.add(new Camera());
+     list1.add(new Camera());
+     showList(list1); //Won't work because ArrayList<Camera> is not a subclass of ArrayList<Machine>
 	}
      
      
-     public static void showList(ArrayList<String> list) {
-    	 for(String value:list)
+     public static void showList(ArrayList<Machine> list) {
+    	 for(Machine value:list)
     	 {
     		 System.out.println(value);
     	 }
