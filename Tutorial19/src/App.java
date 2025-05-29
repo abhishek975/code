@@ -22,12 +22,13 @@ public class App {
      ArrayList<Camera> list1 = new ArrayList<Camera>();
      list1.add(new Camera());
      list1.add(new Camera());
-     showList(list1); //Won't work because ArrayList<Camera> is not a subclass of ArrayList<Machine>
+     showList(list1); 
 	}
      
      
-     public static void showList(ArrayList<Machine> list) {
-    	 for(Machine value:list)
+     public static void showList(ArrayList<?> list) {
+    	 for(Machine value:list)  //Won't Work because we don't know which type of object is passed
+    		 //into wildcard
     	 {
     		 System.out.println(value);
     	 }
