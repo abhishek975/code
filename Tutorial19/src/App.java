@@ -4,6 +4,9 @@ class Machine{
 	public String toString()
 { return "I am a Machine";
 }
+	public void start() {
+		System.out.println("Machine starting");
+	}
 	}
 class Camera extends Machine{
 	public String toString()
@@ -22,14 +25,16 @@ public class App {
      ArrayList<Camera> list1 = new ArrayList<Camera>();
      list1.add(new Camera());
      list1.add(new Camera());
-     showList(list1); 
+     showList(list); 
 	}
      
      
-     public static void showList(ArrayList<?> list) {
-    	 for(Object value:list)   //This works fine because Oject is the superclass of every class
+     public static void showList(ArrayList<? extends Machine> list) { //Now we know that the object we are passing
+    	 //is extending from Machine,so we can use all methods of till Machine class
+    	 for(Machine value:list)   
     	 {
     		 System.out.println(value);
+    		 value.start();
     	 }
      }
     
