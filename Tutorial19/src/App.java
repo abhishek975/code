@@ -26,11 +26,11 @@ public class App {
      list1.add(new Camera());
      list1.add(new Camera());
      showList(list); 
+     showList(list1); 
 	}
      
      
-     public static void showList(ArrayList<? extends Machine> list) { //Now we know that the object we are passing
-    	 //is extending from Machine,so we can use all methods of till Machine class
+     public static void showList(ArrayList<? extends Machine> list) {//Whatever I pass to wildcard should extends Machine 
     	 for(Machine value:list)   
     	 {
     		 System.out.println(value);
@@ -38,6 +38,13 @@ public class App {
     	 }
      }
     
+     public static void showList1(ArrayList<? super Camera> list) { 
+    	 for(Machine value:list)   //Won't work because super classes of camera need not to necessarily have Camera functions
+    	 {
+    		 System.out.println(value);
+    		 value.start();
+    	 }
+     }
 		
 }
 
