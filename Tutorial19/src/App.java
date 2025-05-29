@@ -27,8 +27,7 @@ public class App {
      
      
      public static void showList(ArrayList<?> list) {
-    	 for(Machine value:list)  //Won't Work because we don't know which type of object is passed
-    		 //into wildcard
+    	 for(Object value:list)   //This works fine because Oject is the superclass of every class
     	 {
     		 System.out.println(value);
     	 }
