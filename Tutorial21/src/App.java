@@ -13,7 +13,7 @@ public class App {
  while(in.hasNextLine()) {
 	 String line= in.nextLine();
 	 System.out.println(line); 
-	 //completed
+	 //completed and submitted
  }
 		 in.close();
 	}
