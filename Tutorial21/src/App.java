@@ -12,7 +12,8 @@ public class App {
  int value= in.nextInt();
  while(in.hasNextLine()) {
 	 String line= in.nextLine();
-	 System.out.println(line);
+	 System.out.println(line); 
+	 //completed
  }
 		 in.close();
 	}
